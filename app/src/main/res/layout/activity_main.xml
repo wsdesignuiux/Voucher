@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/voucher_toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+    <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/ic_paid"/>
+
+        <customfonts.MyTextView_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:textColor="@color/txt_color"
+            android:layout_marginLeft="8dp"/>
+        
+        
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextView_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25.332,"
+            android:textColor="@color/large_txt"
+            android:textSize="35dp"/>
+
+        <customfonts.MyTextView_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/large_txt"
+            android:textSize="16dp"
+            android:text=" 41"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/ic_calendar_1"/>
+
+        <customfonts.MyTextView_Medium
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07/07/2017"
+            android:textColor="@color/txt_color"
+            android:layout_marginLeft="8dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+
+
+        <com.android.ex.chips.RecipientEditTextView
+            android:id="@+id/contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Insert number of choose from addressbook"
+            android:textColorHint="@color/edit_txt"
+            android:textSize="13dp"
+            android:background="#00000000" />
+
+
+        <LinearLayout
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:src="@drawable/ic_contacts"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextView_Bold
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="Write"
+            android:textColorHint="@color/edit_txt"
+            android:layout_marginLeft="8dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="20dp">
+
+        <ImageView
+
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_mail"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextView_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert amount to send"
+            android:textColor="@color/txt_color"
+            android:layout_marginLeft="8dp"/>
+
+
+
+        <customfonts.MyTextView_Bold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/txt_color"
+            android:text="3.423,27"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
